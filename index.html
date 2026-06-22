@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Habit Tracker v.2</title>
+  </head>
+  <body>
+    <main class="habit-app">
+      <section class="today-panel">
+        <p class="app-label">Habit Tracker PRO</p>
+        <h1>Build consistency.</h1>
+        <p class="subtitle">
+          Track daily habits, complete your routine and keep your streak alive.
+        </p>
+
+        <div class="date-card">
+          <span>Today</span>
+          <strong id="todayDate">--</strong>
+        </div>
+
+        <form id="habitForm" class="habit-form">
+          <label for="habitInput">New habit</label>
+          <input
+            type="text"
+            id="habitInput"
+            placeholder="Example: Coding 1 hour"
+          />
+
+          <label for="categoryInput">Category</label>
+          <select id="categoryInput">
+            <option value="health">Health</option>
+            <option value="fitness">Fitness</option>
+            <option value="study">Study</option>
+            <option value="work">Work</option>
+            <option value="life">Life</option>
+          </select>
+
+          <button type="submit">Add Habit</button>
+        </form>
+      </section>
+
+      <section class="main-board">
+        <header class="score-card">
+          <div>
+            <p class="app-label">Consistency Score</p>
+            <h2 id="scoreText">0%</h2>
+            <p id="scoreMessage">Add your first habit to start tracking.</p>
+          </div>
+
+          <div class="score-ring">
+            <span id="completedToday">0/0</span>
+          </div>
+        </header>
+
+        <section class="stats-strip">
+          <article>
+            <span id="totalHabits">0</span>
+            <p>Total Habits</p>
+          </article>
+
+          <article>
+            <span id="doneToday">0</span>
+            <p>Done Today</p>
+          </article>
+
+          <article>
+            <span id="bestStreak">0</span>
+            <p>Best Streak</p>
+          </article>
+        </section>
+
+        <section class="toolbar">
+          <input type="text" id="searchInput" placeholder="Search habit..." />
+
+          <select id="filterInput">
+            <option value="all">All categories</option>
+            <option value="health">Health</option>
+            <option value="fitness">Fitness</option>
+            <option value="study">Study</option>
+            <option value="work">Work</option>
+            <option value="life">Life</option>
+          </select>
+        </section>
+
+        <section id="habitsList" class="habits-list">
+          <!-- habits render is JS -->
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
