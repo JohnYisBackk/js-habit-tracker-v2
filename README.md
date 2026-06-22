@@ -1,4 +1,4 @@
-# Habit Tracker PRO
+# Habit Tracker V2
 
 A modern and responsive habit tracking application built with **HTML**, **CSS**, and **JavaScript**.
 
@@ -8,7 +8,7 @@ Track your daily habits, monitor your consistency, and stay motivated with a cle
 
 ## 🔗 Live Demo
 
-👉 **Live Demo:** 
+👉 **Live Demo:** https://johnyisbackk.github.io/js-habit-tracker-v2/
 
 ---
 
